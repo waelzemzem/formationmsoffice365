@@ -1,0 +1,5 @@
+connect-MgGraph -Scopes "User.ReadWrite.All"
+new-MgUser -DisplayName 'Tom smith' -PasswordProfile $passwordProfile -AccountEnabled -UserPrincipalName 'tom@proms01.onmicrosoft.com' -MailNickname 'tom'
+
+#https://learn.microsoft.com/en-us/microsoft-365/enterprise/view-licenses-and-services-with-microsoft-365-powershell?view=o365-worldwide
+Connect-Graph -Scopes Organization.Read.All
